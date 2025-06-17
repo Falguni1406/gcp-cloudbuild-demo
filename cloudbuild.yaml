@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: [
+    'functions', 'deploy', 'helloWorld',
+    '--runtime=nodejs18',
+    '--trigger-http',
+    '--allow-unauthenticated',
+    '--region=us-central1'
+  ]
