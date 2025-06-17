@@ -1,5 +1,6 @@
 exports.helloWorld = (req, res) => {
-  res.send("Hello from updated Cloud Build!");
-
+  const now = new Date();
+  res.send(`Hello, Falguni! 👋\nCurrent server time is: ${now}`);
 };
+
 "console.log('Code updated');" 
